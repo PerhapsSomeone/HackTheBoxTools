@@ -46,7 +46,7 @@ echo ""
 echo "Installation status of interesting services: "
 [ -f /usr/sbin/apache2 ] && echo "apache2 is installed!" || echo "apache2 is NOT installed!"
 [ -f /usr/bin/nginx ] && echo "nginx is installed!" || echo "nginx is NOT installed!"
-[ -f /usr/bin/pihole ] && echo "PiHole is installed!" || echo "PiHole is NOT installed!"
+[ -f /usr/local/bin/pihole ] && echo "PiHole is installed!" || echo "PiHole is NOT installed!"
 
 echo ""
 echo "-----------------------------------------------"

@@ -21,6 +21,15 @@ userID="$(id)"
 
 echo $loggedinAsText$userName$idText$userID
 echo ""
+echo "-----------------------------------------------"
+echo ""
+echo "System Information"
+echo "Kernel Release: $(uname -r)"
+echo "Kernel version: $(uname -v)"
+echo "Hostname: $(hostname)"
+echo ""
+echo "-----------------------------------------------"
+echo ""
 echo "All currently open ports on the machine:"
 netstat -tuwanp4 | awk '{print $4}' | grep ':' | cut -d ":" -f 2 | sort | uniq
 echo ""

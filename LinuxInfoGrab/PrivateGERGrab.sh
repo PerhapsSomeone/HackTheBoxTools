@@ -73,11 +73,6 @@ fi
 echo ""
 echo "-----------------------------------------------"
 echo ""
-echo "List of PHP files in /var/www/html:"
-find /var/www/html -type f -name "*.php"
-echo ""
-echo "-----------------------------------------------"
-echo ""
 echo "User Passwords: "
 if [ "$(id -u)" = "0" ]; 
    then
